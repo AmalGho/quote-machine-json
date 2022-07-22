@@ -31,9 +31,22 @@
   position: relative;
 }
 
+@media (max-width: 1023px) {
+  .quote-box {
+    width: 50rem;
+    min-height: 40rem;
+  }
+}
+
 .quote-box > i {
   color: #eee;
   font-size: 1.5rem;
+}
+
+@media (max-width: 1023px) {
+  .quote-box > i {
+    font-size: 3rem;
+  }
 }
 
 hr {
@@ -49,7 +62,6 @@ hr {
   justify-content: center;
   gap: 2rem;
   text-align: center;
-  line-height: 2rem;
   font-size: 1.5rem;
   font-weight: 400;
   color: #fff;
@@ -57,7 +69,7 @@ hr {
 }
 
 .text > span {
-    line-height: 2rem;
+    line-height: 3.5rem;
 }
 
 #author {
@@ -66,7 +78,18 @@ hr {
   font-weight: 300;
 }
 
-.new-btn {
+@media (max-width: 1023px) {
+  .text {
+    font-size: 2.2rem;
+    min-height: 3rem;
+  }
+  
+  #author {
+    font-size: 2rem;
+  }
+}
+
+.btn {
   border-radius: 1rem;
   padding: 1rem;
   color: #fff;
@@ -77,5 +100,12 @@ hr {
   font-size: 1.5rem;
 }
 
+@media (max-width: 1023px) {
+  .btn {
+    font-size: 3rem;
+    padding: 1.5rem;
+    bottom: -2rem;
 
+  }
+}
 

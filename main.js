@@ -1,6 +1,6 @@
 
-let textQ = document.getElementById('text');
-let authorQ = document.getElementById('author');
+let text = document.getElementById('text');
+let author = document.getElementById('author');
 
 
 function randomColor(num){
@@ -11,10 +11,10 @@ $(function() {
     $('#new-quote').click(function(){
         $.getJSON('data.json', function(data) {
 
-            let index = data[Math.floor(Math.random()*data.length)];
+            let index = data[ Math.floor(Math.random() * data.length) ];
             
-            textQ.innerText=index.text;
-            authorQ.innerText=index.author;
+            text.innerText = index.text;
+            author.innerText = index.author;
 
         });
     });
